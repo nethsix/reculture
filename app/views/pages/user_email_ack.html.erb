@@ -1,0 +1,33 @@
+<html>
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .warning {
+      font-size: large;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-md-offset-2">
+        <h1 class="margin-base-vertical">The management has taken action!</h1>
+        <p>
+          Your manager has decided to: 
+          <ul>
+            <li>Try to over-estimate project completion time</li>
+          </ul>
+          in order to address the issue of:
+          <ul>
+            <li>Overtime averaging > 10 hours a week</li>
+          </ul>
+        </p>
+        <%= image_tag "smiley.jpg" %>
+        <a class="btn btn-lg btn-success" href="#" role="button">Say Thanks for Listening!</a>
+      </div>
+    </div>
+    <a href='<%= pages_user_email_poll_path %>' >Next</a>
+  </div>
+</body>
+</html>

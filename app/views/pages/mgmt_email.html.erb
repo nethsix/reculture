@@ -1,0 +1,31 @@
+<html>
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .warning {
+      font-size: large;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-md-offset-2">
+        <h2 class="margin-base-vertical">Would you like to make the company better?</h2>
+        <p>
+          Someone gave feedback on <a class="btn btn-sm btn-info" href="#" role="button">work-life-balance</a> aspects in your company.</a>
+        </p>
+        <p>
+          <%= image_tag "mgmt_email.jpg" %>
+        </p>
+        <p>
+          The number of unhappy employees in the area has increased <span class='warning'>3%</span> from last week!
+        </p>
+        <a class="btn btn-lg btn-success" href="<%= pages_manager_path %>" role="button">Make Your Company A Great Place to Work Again!</a>
+      </div>
+    </div>
+    <a href='<%= pages_user_email_ack_path %>' >Next</a>
+  </div>
+</body>
+</html>
