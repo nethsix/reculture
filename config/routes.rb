@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  get 'pages/survey'
+
+  get 'pages/survey_details'
 
   get 'pages/employee'
 
