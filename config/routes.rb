@@ -7,6 +7,12 @@ Rails.application.routes.draw do
 
   get 'pages/manager'
 
+  get 'pages/mgmt_email'
+
+  get 'pages/user_email_ack'
+
+  get 'pages/user_email_poll'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
