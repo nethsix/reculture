@@ -14,10 +14,12 @@ body {
 .content {
   text-align: center;
   width: 100%;
-  p {
-    width: 50%;
-    display: inline-block;
-    margin-top: 0;
+  .heading {
+    p {
+      width: 50%;
+      display: inline-block;
+      margin-top: 0;
+    }
   }
   .feedback-short {
     width: 50%%;
@@ -43,7 +45,7 @@ body {
         .row3 > span {
           margin-bottom: 0;
         }
-      }
+      } // tags
       .comment {
         border-right: 1px solid #ddd;
         padding-right: 20px;
@@ -53,8 +55,11 @@ body {
           height: 100px;
           overflow: scroll;
         }
+      } // comment
+      button {
+        margin-top: 20px;
       }
-    }
+    } // feedback-form
     .tips {
       width: 35%;
       text-align: left;
@@ -65,10 +70,48 @@ body {
         width: 100%;
         font-size: 12px;
       }
+      .tips-top {
+        margin-top: 10px;
+      }
       .tips-bottom {
-        margin-top: 50px;
+        margin-top: 60px;
+      }
+    } // tips
+  } // feedback-short
+
+  .feedback-long {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    .feedback-headings {
+      width: 30%;
+      float: left;
+      text-align: right;
+      .feedback-heading {
+        padding: 20px 0 10px 30px;
+        &.not-selected {
+          padding-right: 40px;
+        }
+        .blip {
+          float: right;
+          position: relative;
+          left: 1px;
+          margin-left: 30px;
+          img {
+            height: 20px;
+            width: 10px;
+          }
+        }
+      }
+    } // feedback-headings
+    .feedback-sections {
+      border-left: 1px solid #ddd;
+      width: 60%;
+      float:left;
+      min-height: 500px;
+      .feedback-section {
+
       }
     }
-  }
+  } // feedback-long
 
 }
