@@ -115,26 +115,26 @@ p { //new
         padding-left: 5px;
         span {
           display: inline-block;
-          width: 180; //new 
-          height: 60; //new 
+          width: 180;
+          height: 60;
           padding: 10px 15px;
           margin-bottom: 5px;
-          background-color: #fff; //new 
-		  border: 2px solid #104867; //new 
+          background-color: #fff; 
+		  border: 2px solid #104867;
 		  
-		  font-family: 'Open Sans Condensed', sans-serif; // new
-		  font-size: 18px; //new 
-		  line-height: 36px; //new 
-		  color: #104867; //new 
+		  font-family: 'Open Sans Condensed', sans-serif;
+		  font-size: 18px;
+		  line-height: 36px; 
+		  color: #104867;
 		  
-		  &:hover { //new 
+		  &:hover {
 			cursor: pointer;  
 		  	}	
 		  
         }
         .marked {
-          background-color: #EC4848; //new 
-          border-color: #EC4848; //new 
+          background-color: #EC4848;
+          border-color: #EC4848;
         }
         .row3 > span {
           margin-bottom: 0;
@@ -143,11 +143,11 @@ p { //new
       .comment {
         border-right: 1px solid #ddd;
         padding-right: 20px;
-        margin-top: 50px;  //new 
+        margin-top: 50px; 
         textarea {
-          width: 550px; //new 
-          height: 120px; //new 
-          overflow: auto; //new 
+          width: 550px;
+          height: 120px; 
+          overflow: auto;
         }
       } // comment
       button { //new 
@@ -175,7 +175,7 @@ p { //new
       float: left;
       p {
         width: 100%;
-        padding-left: 20px; //new 
+        padding-left: 20px;
       }
       .tips-top {
         margin-top: 10px;
