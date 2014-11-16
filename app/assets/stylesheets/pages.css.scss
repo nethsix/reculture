@@ -3,7 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+}
+
+h4 { // new
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+p { //new 
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 2em;
 }
 
 .header {
@@ -90,7 +101,7 @@ body {
     }
   }
   .feedback-short {
-    width: 50%%;
+    width: 80%;
     display: inline-block;
     margin-top: 20px;
     .feedback-form {
@@ -103,12 +114,26 @@ body {
         padding-left: 5px;
         span {
           display: inline-block;
+          width: 180; //new 
+          height: 60; //new 
           padding: 10px 15px;
           margin-bottom: 5px;
-          background-color: #ddd;
+          background-color: #fff; //new 
+		  border: 2px solid #104867; //new 
+		  
+		  font-family: 'Open Sans Condensed', sans-serif; // new
+		  font-size: 18px; //new 
+		  line-height: 36px; //new 
+		  color: #104867; //new 
+		  
+		  &:hover { //new 
+			cursor: pointer;  
+		  	}	
+		  
         }
         .marked {
-          background-color: #e33000;
+          background-color: #EC4848; //new 
+          border-color: #EC4848; //new 
         }
         .row3 > span {
           margin-bottom: 0;
@@ -117,32 +142,45 @@ body {
       .comment {
         border-right: 1px solid #ddd;
         padding-right: 20px;
-        margin-top: 20px; 
+        margin-top: 50px;  //new 
         textarea {
-          width: 100%;
-          height: 100px;
-          overflow: scroll;
+          width: 550px; //new 
+          height: 120px; //new 
+          overflow: auto; //new 
         }
       } // comment
-      button {
-        margin-top: 20px;
+      button { //new 
+        margin-top: 40px;
+		width: 40%;
+		padding: 15px 5px;
+		background-color: #1994B4;
+		outline: none;
+		border: 0;
+		border-radius: 6px;
+		
+		text-align: center;
+		color: #fff;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 800;
+		font-size: 18px;
+		text-transform: uppercase;
       }
     } // feedback-form
     .tips {
       width: 35%;
       text-align: left;
-      padding-left: 20px;
+      padding-left: 40px; 
       padding-top: 10px;
       float: left;
       p {
         width: 100%;
-        font-size: 12px;
+        padding-left: 20px; //new 
       }
       .tips-top {
         margin-top: 10px;
       }
       .tips-bottom {
-        margin-top: 60px;
+        margin-top: 120px;
       }
     } // tips
   } // feedback-short
