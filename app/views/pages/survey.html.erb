@@ -33,7 +33,8 @@
       <div class="comment">
         <textarea name="comment"></textarea>
       </div> <!-- comment -->
-      <button type="submit" value="submit" name="submit">Continue...</button>
+      <%= link_to "Continue...", 'survey_details', method: 'get', class: 'submit-button' %>
+      <!-- <button type="submit" value="submit" name="submit" >Continue...</button> -->
     </div> <!-- feedback-form -->
 
     <div class="tips">
