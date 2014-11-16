@@ -3,12 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header {
-  background-color: #000;
+  background-color: #104867;
   color: #fff;
-  padding: 20px 30px;
+  padding: 5px 30px;
+  overflow: hidden;
+  img {
+    float: right;
+  }
 }
 
 .content {
@@ -88,16 +93,20 @@ body {
 
   .feedback-long {
     border-top: 1px solid #ddd;
-    margin-top: 50px;
     .feedback-headings {
       width: 30%;
       float: left;
       text-align: right;
+      padding-top: 20px;
       .feedback-heading {
         cursor: pointer;
         padding: 20px 0 10px 30px;
         &.not-selected {
           padding-right: 40px;
+        }
+        &.selected {
+          font-weight: bold;
+          color: #104867;
         }
         .blip {
           float: right;
@@ -116,6 +125,7 @@ body {
       width: 60%;
       float:left;
       min-height: 500px;
+      padding-top: 20px;
       .feedback-section {
         .question {
           margin-bottom: 20px;
@@ -127,7 +137,7 @@ body {
           }
           h5 {
             margin-bottom: 20px;
-            font-size: 15px;
+            font-size: 16px;
           }
           .input {
             padding-bottom: 20px;
