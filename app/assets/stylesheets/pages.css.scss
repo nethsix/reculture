@@ -156,8 +156,8 @@ p { //new
         padding-left: 5px;
         span {
           display: inline-block;
-          width: 180;
-          height: 60;
+          width: 180px;
+          height: 60px;
           padding: 10px 15px;
           margin-bottom: 5px;
           background-color: #fff; 
@@ -176,6 +176,7 @@ p { //new
         .marked {
           background-color: #EC4848;
           border-color: #EC4848;
+          color: #fff;
         }
         .row3 > span {
           margin-bottom: 0;
