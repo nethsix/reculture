@@ -33,11 +33,11 @@ p { //new
 
   &.manager {
     .graph {
-      margin: 20px;
+      margin: 50px 20px 20px 20px;
       display: inline-block;
       .graph-title {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         overflow: hidden;
         h3 {
           float: left;
@@ -52,6 +52,7 @@ p { //new
           margin-top: 10px;
           height: 60px;
           width: 600px;
+          margin-bottom: 40px;
         }
       }
     }
