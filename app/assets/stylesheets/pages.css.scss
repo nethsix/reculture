@@ -19,6 +19,34 @@ body {
 .content {
   text-align: center;
   width: 100%;
+
+  &.manager {
+    .graph {
+      margin: 20px;
+      display: inline-block;
+      .graph-title {
+        width: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+        h3 {
+          float: left;
+        }
+      }
+      img {
+        height: 300px;
+        width: 700px;
+      }
+    }
+    .bar-chart {
+      img {
+        height: 250px;
+        width: 550px;
+        float: left;
+        margin-left: 40px;
+        margin-top: 20px;
+      }
+    }
+  }
   .heading {
     background-image: url("heading-background.jpg");
     overflow: hidden;
@@ -111,7 +139,7 @@ body {
         .blip {
           float: right;
           position: relative;
-          left: 1px;
+          left: 2px;
           margin-left: 30px;
           img {
             height: 20px;

@@ -1,7 +1,63 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
-<h1>Overall Culture Trend</h1>
+<div class="header">
+  <%= image_tag("top-nav-manager.png") %>
+</div>
+
+<div class="content manager">
+
+  <div class="graph 1">
+    <div class="graph-title">
+      <h3>Overall Culture Trend</h3>
+    </div>
+    <%= image_tag("hump-graph.jpg") %>
+  </div>
+
+
+  <div class="feedback-long">
+    <div class="feedback-headings">
+      <div class="feedback-heading 1 selected">Overview
+        <div class="blip"><%= image_tag("blip.jpg") %></div>
+      </div>
+      <div class="feedback-heading 2 not-selected">Work/Life Balance
+        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
+      </div>
+      <div class="feedback-heading 3 not-selected">Work Environment
+        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
+      </div>
+      <div class="feedback-heading 4 not-selected">Management
+        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
+      </div>
+      <div class="feedback-heading 5 not-selected">Salary
+        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
+      </div>
+      <div class="feedback-heading 6 not-selected">Benefits
+        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
+      </div>
+    </div>
+    <div class="feedback-sections">
+      <div class="feedback-section">
+        
+      </div>
+      <div class="feedback-section 1 selected">
+        <%= render "manager_overview_section" %>
+      </div>
+      <div class="feedback-section 2 hidden">
+        
+      </div>
+      <div class="feedback-section 3 hidden">
+        
+      </div>
+      <div class="feedback-section 4 hidden"></div>
+      <div class="feedback-section 5 hidden"></div>
+      <div class="feedback-section 6 hidden"></div>
+
+    </div> <!-- feedback-sections -->
+    
+  </div> <!-- feedback-long -->
+
+</div>
 
 
 
