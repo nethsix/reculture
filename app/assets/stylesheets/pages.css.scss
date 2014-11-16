@@ -15,10 +15,17 @@ body {
   text-align: center;
   width: 100%;
   .heading {
+    background-image: url("heading-background.jpg");
+    overflow: hidden;
+    height: 300px;
+    color: white;
+    padding: 7% 0;
     p {
       width: 50%;
       display: inline-block;
       margin-top: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
     }
   }
   .feedback-short {
