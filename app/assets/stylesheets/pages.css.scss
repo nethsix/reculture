@@ -94,7 +94,6 @@ p { //new
     .quote {
       float: left;
       text-align: center;
-      // width: 40%;
       margin-top: 50px;
       margin-left: 100px;
       p {
@@ -104,9 +103,27 @@ p { //new
     }
     .action-items {
       float: left;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      h4 {
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+      }
       .action-item {
+        width: 65%;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        overflow: hidden;
         .act-button {
           float: left;
+          margin-top: 5px;
+        }
+        .act-text {
+          width: 80%;
+          text-align: left;
+          float: right;
+          padding-left: 20px;
         }
       }
     }
