@@ -3,15 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
-h4 {
+h4 { // new
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 }
 
-p {
+p { //new 
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
@@ -19,72 +18,19 @@ p {
 }
 
 .header {
-  background-color: #104867;
+  background-color: #000;
   color: #fff;
-  padding: 5px 30px;
-  overflow: hidden;
-  img {
-    float: right;
-  }
+  padding: 20px 30px;
 }
 
 .content {
   text-align: center;
   width: 100%;
-
-  &.manager {
-    .graph {
-      margin: 20px;
-      display: inline-block;
-      .graph-title {
-        width: 100%;
-        margin-bottom: 20px;
-        overflow: hidden;
-        h3 {
-          float: left;
-        }
-      }
-      img {
-        height: 300px;
-        width: 700px;
-      }
-    }
-    .bar-chart {
-      float: left;
-      h4 {
-        text-align: left;
-        margin-left: 30px;
-      }
-      img {
-        height: 250px;
-        width: 550px;
-        float: left;
-        margin-left: 40px;
-        margin-top: 20px;
-      }
-    }
-    .previous-months {
-      margin-top: 30px;
-      margin-bottom: 50px;
-      float: left;
-      h4 {
-        text-align: left;
-        margin-left: 30px;
-      }
-      img {
-        height: 150px;
-        width: 500px;
-        float: left;
-        margin-left: 60px;
-        margin-top: 20px;
-      }
-    }
-  }
   .heading {
     background-image: url("heading-background.jpg");
     overflow: hidden;
     height: 300px;
-    color: white;
+    color: #fff;
     padding: 7% 0;
     p {
       width: 50%;
@@ -108,25 +54,26 @@ p {
         padding-left: 5px;
         span {
           display: inline-block;
-          width: 180;
-          height: 60;
+          width: 180; //new 
+          height: 60; //new 
           padding: 10px 15px;
           margin-bottom: 5px;
-          background-color: #fff; 
-		  border: 2px solid #104867;
+          background-color: #fff; //new 
+		  border: 2px solid #104867; //new 
 		  
-		  font-family: 'Open Sans Condensed', sans-serif;
-		  font-size: 18px; 
-		  line-height: 36px; 
-		  color: #104867; 
+		  font-family: 'Open Sans Condensed', sans-serif; // new
+		  font-size: 18px; //new 
+		  line-height: 36px; //new 
+		  color: #104867; //new 
 		  
-		  &:hover { 
+		  &:hover { //new 
 			cursor: pointer;  
 		  	}	
+		  
         }
         .marked {
-          background-color: #EC4848;
-          border-color: #EC4848;
+          background-color: #EC4848; //new 
+          border-color: #EC4848; //new 
         }
         .row3 > span {
           margin-bottom: 0;
@@ -135,14 +82,14 @@ p {
       .comment {
         border-right: 1px solid #ddd;
         padding-right: 20px;
-        margin-top: 50px;
+        margin-top: 50px;  //new 
         textarea {
-          width: 550px;
-          height: 120px; 
-          overflow: auto; 
+          width: 550px; //new 
+          height: 120px; //new 
+          overflow: auto; //new 
         }
       } // comment
-      button {
+      button { //new 
         margin-top: 40px;
 		width: 40%;
 		padding: 15px 5px;
@@ -153,20 +100,21 @@ p {
 		
 		text-align: center;
 		color: #fff;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 800;
-		font-size: 20px;
+		font-size: 18px;
+		text-transform: uppercase;
       }
     } // feedback-form
     .tips {
       width: 35%;
       text-align: left;
-      padding-left: 40px;
+      padding-left: 40px; 
       padding-top: 10px;
       float: left;
       p {
         width: 100%;
-        padding-left: 20px;
+        padding-left: 20px; //new 
       }
       .tips-top {
         margin-top: 10px;
@@ -184,21 +132,16 @@ p {
       width: 30%;
       float: left;
       text-align: right;
-      padding-top: 20px;
       .feedback-heading {
         cursor: pointer;
         padding: 20px 0 10px 30px;
         &.not-selected {
           padding-right: 40px;
         }
-        &.selected {
-          font-weight: bold;
-          color: #104867;
-        }
         .blip {
           float: right;
           position: relative;
-          left: 2px;
+          left: 1px;
           margin-left: 30px;
           img {
             height: 20px;
@@ -212,7 +155,6 @@ p {
       width: 60%;
       float:left;
       min-height: 500px;
-      padding-top: 20px;
       .feedback-section {
         .question {
           margin-bottom: 20px;
@@ -224,7 +166,7 @@ p {
           }
           h5 {
             margin-bottom: 20px;
-            font-size: 16px;
+            font-size: 15px;
           }
           .input {
             padding-bottom: 20px;
