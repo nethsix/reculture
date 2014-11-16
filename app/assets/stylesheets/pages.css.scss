@@ -86,6 +86,30 @@ p { //new
         margin-top: 20px;
       }
     }
+    .engaged-employees {
+      float: left;
+      margin-left: 80px;
+      margin-top: 40px;
+    }
+    .quote {
+      float: left;
+      text-align: center;
+      // width: 40%;
+      margin-top: 50px;
+      margin-left: 100px;
+      p {
+        width: 40%;
+        font-size: 15px;
+      }
+    }
+    .action-items {
+      float: left;
+      .action-item {
+        .act-button {
+          float: left;
+        }
+      }
+    }
   }
   .heading {
     background-image: url("heading-background.jpg");
@@ -196,6 +220,7 @@ p { //new
       .feedback-heading {
         cursor: pointer;
         padding: 20px 0 10px 30px;
+        overflow: hidden;
         &.not-selected {
           padding-right: 40px;
         }
@@ -213,6 +238,16 @@ p { //new
             width: 10px;
           }
         }
+        span {
+          float: right;
+          display: block;
+        }
+        .notification {
+          float: right;
+          margin-right: 20px;
+          position: relative;
+          bottom: 1px;
+        }
       }
     } // feedback-headings
     .feedback-sections {
@@ -221,6 +256,7 @@ p { //new
       float:left;
       min-height: 500px;
       padding-top: 20px;
+      z-index: -1;
       .feedback-section {
         .question {
           margin-bottom: 20px;

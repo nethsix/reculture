@@ -23,8 +23,10 @@
       <div class="feedback-heading 1 selected">Overview
         <div class="blip"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading 2 not-selected">Work/Life Balance
+      <div class="feedback-heading 2 not-selected">
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
+        <span>Work/Life Balance</span>
+        <div class="notification"><%= image_tag("notification-red.png") %></div>
       </div>
       <div class="feedback-heading 3 not-selected">Work Environment
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
@@ -47,7 +49,7 @@
         <%= render "manager_overview_section" %>
       </div>
       <div class="feedback-section 2 hidden">
-        
+        <%= render "manager_worklife_balance" %>
       </div>
       <div class="feedback-section 3 hidden">
         
