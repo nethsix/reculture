@@ -22,5 +22,13 @@ $ ->
       $this.addClass("selected")
       $this.children('.blip').removeClass("hidden")
 
+      numbers = [1..6]
+      for number in numbers
+        if $previousSelected.hasClass("#{number}")
+          $(".feedback-section.#{number}").removeClass("selected").addClass("hidden")
+
+        if $this.hasClass("#{number}")
+          $(".feedback-section.#{number}").removeClass("hidden").addClass("selected")
+
 
     
