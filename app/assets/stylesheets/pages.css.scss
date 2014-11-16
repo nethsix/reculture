@@ -87,6 +87,7 @@ body {
       float: left;
       text-align: right;
       .feedback-heading {
+        cursor: pointer;
         padding: 20px 0 10px 30px;
         &.not-selected {
           padding-right: 40px;
@@ -109,7 +110,37 @@ body {
       float:left;
       min-height: 500px;
       .feedback-section {
-
+        .question {
+          margin-bottom: 20px;
+          &.top {
+            margin-top: 40px;
+          }
+          &.bottom {
+            margin-bottom: 50px;
+          }
+          h5 {
+            margin-bottom: 20px;
+            font-size: 15px;
+          }
+          .input {
+            padding-bottom: 20px;
+          }
+          .slider {
+            width: 500px;
+            display: inline-block;
+            .info-left {
+              float: left;
+              font-size: 11px;
+            }
+            .info-right {
+              float: right;
+              font-size: 11px;
+            }
+          }
+          .overtime {
+            width: 50px;
+          }
+        }
       }
     }
   } // feedback-long

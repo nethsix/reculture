@@ -1,0 +1,31 @@
+<div class="question top">
+  <h5>Do you feel like your work hours are reasonable?</h5>
+  <div class="slider">
+    <div class="info-left">I feel bad I'm not working more hours</div>
+    <div class="info-right">I basically live in the office</div>
+    <%= image_tag("slider.jpg") %>
+  </div>
+</div>
+
+<div class="question">
+  <h5>What are your regular work hours?</h5>
+  <div class="input">
+    <%= render "time_selection" %>
+  </div>
+</div>
+
+<div class="question">
+  <h5>Do you feel like you're working too much overtime?</h5>
+  <div class="slider">
+    <div class="info-left">I don't really work overtime</div>
+    <div class="info-right">I work way too much overtime</div>
+    <%= image_tag("slider.jpg") %>
+  </div>
+</div>
+
+<div class="question bottom">
+  <h5>How many hours of overtime do you work per week?</h5>
+  <div class="input">
+    <input class="overtime" type="number"> hours on average  
+  </div>
+</div>

@@ -17,7 +17,7 @@ $ ->
       $previousSelected.addClass("not-selected")
       $previousSelected.removeClass("selected")
       $previousSelected.children(".blip").addClass("hidden")
-      
+
       $this.removeClass("not-selected")
       $this.addClass("selected")
       $this.children('.blip').removeClass("hidden")

@@ -11,35 +11,42 @@
 
   <div class="feedback-long">
     <div class="feedback-headings">
-      <div class="feedback-heading selected">Overview
+      <div class="feedback-heading 1 selected">Work/Life Balance
         <div class="blip"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading not-selected">Management
+      <div class="feedback-heading 2 not-selected">Work Environment
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading not-selected">Work/Life Balance
+      <div class="feedback-heading 3 not-selected">Management
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading not-selected">Work Environment
+      <div class="feedback-heading 4 not-selected">Salary
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading not-selected">Salary
+      <div class="feedback-heading 5 not-selected">Benefits
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading not-selected">Benefits
-        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
-      </div>
-      <div class="feedback-heading not-selected">Submit
+      <div class="feedback-heading 6 not-selected">Submit
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
     </div>
     <div class="feedback-sections">
-      <div class="feedback-section"></div>
-      <div class="feedback-section"></div>
-      <div class="feedback-section"></div>
-      <div class="feedback-section"></div>
-      <div class="feedback-section"></div>
-      <div class="feedback-section"></div>
+      <div class="feedback-section">
+        
+      </div>
+      <div class="feedback-section 1 selected">
+        Work/Life Balance
+        <%= render "survey_worklife_balance" %>
+      </div>
+      <div class="feedback-section 2 hidden">
+        Work Environment
+      </div>
+      <div class="feedback-section 3 hidden">
+        Management
+      </div>
+      <div class="feedback-section 4 hidden"></div>
+      <div class="feedback-section 5 hidden"></div>
+      <div class="feedback-section 6 hidden"></div>
 
     </div> <!-- feedback-sections -->
     
