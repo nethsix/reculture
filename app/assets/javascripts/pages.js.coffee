@@ -26,9 +26,11 @@ $ ->
       for number in numbers
         if $previousSelected.hasClass("#{number}")
           $(".feedback-section.#{number}").removeClass("selected").addClass("hidden")
+          $(".graph.#{number}").addClass("hidden")
 
         if $this.hasClass("#{number}")
           $(".feedback-section.#{number}").removeClass("hidden").addClass("selected")
+          $(".graph.#{number}").removeClass("hidden")
 
 
     

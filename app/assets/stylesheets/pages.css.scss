@@ -35,6 +35,9 @@ p { //new
     .graph {
       margin: 50px 20px 20px 20px;
       display: inline-block;
+      &.big-graph {
+        margin-bottom: 60px;
+      }
       .graph-title {
         width: 100%;
         margin-bottom: 30px;
@@ -71,7 +74,7 @@ p { //new
       }
     }
     .previous-months {
-      margin-top: 30px;
+      margin-top: 50px;
       margin-bottom: 50px;
       float: left;
       h4 {
@@ -283,7 +286,7 @@ p { //new
       z-index: -1;
       .feedback-section {
         .question {
-          margin-bottom: 20px;
+          margin-bottom: 50px;
           &.top {
             margin-top: 40px;
           }
