@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'pages/manager'
 
+  get 'pages/hr'
+
   get 'pages/mgmt_email'
 
   get 'pages/user_email_ack'

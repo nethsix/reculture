@@ -2,34 +2,51 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
 <div class="header">
-  <%= image_tag("top-nav-user.png") %>
+  <%= image_tag("top-nav-manager.png") %>
 </div>
 
-<div class="content">
-  <div class="heading">
-    <h1>Do you really want to make a change?</h1>
-    <br/>
-    <p>Invite more colleagues: <input type="text"/><span style="font-size:20px"> <b>+</b></span></p>
+<div class="content manager">
+
+  <div class="graph 1">
+    <div class="graph-title">
+      <h3>Overall Culture Trend</h3>
+    </div>
+    <%= image_tag("hump-graph.jpg") %>
+    <div class="graph-tags">
+      <%= image_tag("category-tags.png") %>
+    </div>
   </div>
+
+<!-----
+  <div class="graph big-graph 2 hidden">
+    <div class="graph-title">
+      <h3>Work/Life Balance</h3>
+    </div>
+    <%= image_tag("big-graph.png") %>
+  </div>
+----->
+
 
   <div class="feedback-long">
     <div class="feedback-headings">
-      <div class="feedback-heading 1 selected">Work/Life Balance
+      <div class="feedback-heading 1 selected">Overview
         <div class="blip"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading 2 not-selected">Work Environment
+      <div class="feedback-heading 2 not-selected">
+        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
+        <span>Work/Life Balance</span>
+        <div class="notification"><%= image_tag("notification-red.png") %></div>
+      </div>
+      <div class="feedback-heading 3 not-selected">Work Environment
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading 3 not-selected">Management
+      <div class="feedback-heading 4 not-selected">Management
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading 4 not-selected">Salary
+      <div class="feedback-heading 5 not-selected">Salary
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
-      <div class="feedback-heading 5 not-selected">Benefits
-        <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
-      </div>
-      <div class="feedback-heading 6 not-selected">Submit
+      <div class="feedback-heading 6 not-selected">Benefits
         <div class="blip hidden"><%= image_tag("blip.jpg") %></div>
       </div>
     </div>
@@ -38,13 +55,13 @@
         
       </div>
       <div class="feedback-section 1 selected">
-        <%= render "survey_worklife_balance" %>
+        <%= render "hr_overview_section" %>
       </div>
       <div class="feedback-section 2 hidden">
-        <%= render "survey_work_environment" %>
+        <%= render "manager_worklife_balance" %>
       </div>
       <div class="feedback-section 3 hidden">
-        <%= render "survey_management" %>
+        
       </div>
       <div class="feedback-section 4 hidden"></div>
       <div class="feedback-section 5 hidden"></div>
@@ -54,5 +71,7 @@
     
   </div> <!-- feedback-long -->
 
+</div>
 
-</div> <!-- content -->
+
+
